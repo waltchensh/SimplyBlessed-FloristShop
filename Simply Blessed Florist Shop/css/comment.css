@@ -1,0 +1,15 @@
+   <style>
+   #content{margin:0 auto 20px auto; width:960px; z-index:2; text-align:center;border:2px solid black;}
+#content #post textarea{display:inline-block;margin-top:20px; margin-bottom:20px; padding:5px; width:400px; height:150px; border:2px black solid; border-radius:5px; resize:none; outline:none;}
+#content #post textarea:hover{border:2px #black solid; background:#f0fbeb;}
+#content #post #postBt,#contents #post #clearBt{margin-left:5px; padding:3px; float:right;display:inline;border:2px #black solid;}
+#comment{overflow:hidden;border:2px solid black;}
+#comment p{margin-bottom:10px; padding:10px; border-radius:5px;border:2px solid black;}
+#comment p:nth-child(odd){border:2px solid black; background:lightgrey;color:white;}
+#comment p:nth-child(even){border:2px solid black; background:#f2fddb;}
+#comment p span{display:inline; float:left;}
+#comment p .right{text-align:right;}
+#comment p .msg{width:738px;}
+#comment p .datetime{width:200px; color:#999; text-align:right;}
+
+    </style>

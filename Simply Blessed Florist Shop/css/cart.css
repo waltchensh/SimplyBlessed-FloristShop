@@ -1,0 +1,361 @@
+<style>
+	.main{
+		text-align: center;
+		max-width: 90%;
+	margin: 0 auto;
+	padding: 0 1em;
+	font-weight: 800; font-family:Microsoft JhengHei;
+	
+	}
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
+
+
+:active, :focus {
+	outline-style: none;
+}
+
+a:link {	
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cc1400;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+#site {
+	height:100%;
+	max-height:100%;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0 1em;
+	font-weight: 800; font-family:Microsoft JhengHei;
+}
+
+#masthead {
+
+	padding: 2em 0 0.5em 0;
+	border-bottom: 1px solid black;
+}
+
+#masthead h1 {
+	text-align: center;
+	margin: 0;
+	font-size: 4.5em;
+	overflow: hidden;
+	padding-left: 5px;
+	min-height: 82px;
+	line-height: 2.3;
+	color: #900;
+	font-style: italic;
+	
+}
+
+.tagline {
+	float: right;
+	color: #666;
+	font-size: 14px;
+	padding-top: 3.5em;
+}
+#products h1{
+	font-size: 3em;
+	font-weight:800;
+	font-weight:bolder;
+}
+#products ul {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+#products li {
+	width: 31%;
+	margin: 10px 1%;
+	display: inline-block;
+}
+
+.product-image {
+	position:relative;
+	margin: 0 auto 1em auto;
+	background: #000;
+	width: 250px;
+	height: 250px;
+	border-radius: 3px;
+	
+}
+.product-image img{
+	border:3px solid black;
+	position:relative;
+	margin: 0 auto 1em auto;
+	background: #000;
+	width: 250px;
+	height: 250px;
+	border-radius: 3px;
+	
+}
+.product-description {
+	border: 1px solid black;
+	padding: 1em;
+	background: black;
+	color: white;
+	border-radius: 5px;
+}
+
+.product-name {
+	text-align: center;
+	color: white;
+	margin: 0;
+	font-size: 1.7em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #666;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.product-price {
+	height: 4em;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 1em auto;
+	background: #fff;
+	color: #800;
+	line-height: 4;
+	border-radius: 30px;
+}
+
+form.add-to-cart div,
+form.add-to-cart p {
+	text-align: center;
+}
+
+form input.qty {
+	width: 40px;
+	border: 1px solid #eee;
+	font: 1em 'PT Serif', serif;
+	background: #f9f9f9;
+	color: #000;
+	border-radius: 3px;
+	margin-left: 0.4em;
+}
+
+.btn, a.btn {
+	display: inline-block;
+	background: #cc1400;
+	color: #fff;
+	font: 1em 'PT Serif', serif;
+	padding: 0.3em 1em;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #a00;
+}
+
+
+#site-info {
+	height: 3em;
+	width: 100%;
+	line-height: 3;
+	text-align: center;
+	background: #cc8500;
+	position: absolute;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+}
+
+body#checkout-page #site-info {
+	position: static;
+}
+
+#shopping-cart {
+	margin: 1.5em 0;
+	background-color:white;
+	border:1px solid black;
+}
+
+.shopping-cart {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.shopping-cart th {
+	color:black;
+	font-size: 1.3em;
+	padding: 0.3em;
+	width: 33.3%;
+	border: 1px solid #ddd;
+	text-transform: uppercase;
+}
+
+.shopping-cart td {
+	color:black;
+	padding: 0.3em;
+	width: 33.3%;
+	border: 1px solid #ddd;
+}
+
+.shopping-cart tr:nth-child(even) {
+	background: #fafafa;
+},
+
+.shopping-cart td.pdelete {
+	text-align: center;
+}
+
+.pdelete a,
+.pdelete a:hover {
+	color: #c00;
+	text-decoration: none;
+	font-size: 2.5em;
+	display: block;
+	text-align: center;
+}
+
+#shopping-cart-actions {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#shopping-cart-actions li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#pricing {
+	padding: 0.5em;
+	margin: 1em 0;
+	background: #fafafa;
+}
+
+#sub-total, #shipping {
+	margin: 1.5em 0;
+	text-align: right;
+}
+
+#sub-total span,
+#shipping span {
+	margin-left: 1em;
+}
+
+#content > h1,
+#checkout-order-form h2 {
+	font-size: 2em;
+	text-align: center;
+	background-color:white;
+	border:1px solid black;
+}
+
+#pricing #sub-total,
+#pricing #shipping {
+	margin: 1em 0;
+}
+#checkout-order-form div{
+	display:inline-block;
+	text-align:center;
+}
+#checkout-order-form {
+	margin: 1.5em 0;
+	text-align:center;
+}
+
+#checkout-order-form fieldset {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 1em;
+	margin-bottom: 1.3em;
+}
+
+#checkout-order-form legend {
+	padding: 0.3em;
+	background: #fafafa;
+	font-weight: bold;
+}
+
+#checkout-order-form div {
+	margin-bottom: 1em;
+}
+
+#checkout-order-form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+	text-align: left;
+}
+
+#checkout-order-form input[type="text"] {
+	width: 200px;
+	display: block;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0.3em;
+}
+
+#checkout-order-form select {
+	width: 200px;
+	display: block;
+}
+
+.message {
+	display: block;
+	margin: 0.5em 0;
+	color: red;
+}
+
+#user-details {
+	margin: 1.5em 0;
+}
+
+#user-details > h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#user-details-content {
+	margin: 1.5em 0;
+	padding: 1em;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+#user-details-content .detail {
+	float: left;
+	width: 46%;
+}
+
+#user-details-content .detail.right {
+	float: right;
+}
+
+#user-details-content .detail > h2 {
+	text-align: center;
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+#user-details-content ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+}
+
+#user-details-content li {
+	display: block;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #ddd;
+}
+
+
+</style>
